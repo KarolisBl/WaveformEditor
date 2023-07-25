@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Waveform Editor</string>
+    <string name="import_waveform">Import waveform</string>
+    <string name="export_waveform">Export waveform</string>
+    <string name="waveform_not_imported">Import text file to see waveform</string>
+    <string name="waveform_import_error">An error occurred while trying to import the file</string>
+    <string name="waveform_export_error">An error occurred while trying to export the file</string>
+    <string name="waveform_export_success">Waveform exported successfully!</string>
+</resources>

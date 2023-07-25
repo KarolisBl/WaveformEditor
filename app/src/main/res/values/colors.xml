@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#408FE4</color>
+    <color name="primary_variant">#2B639F</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="waveform_background">#151719</color>
+    <color name="waveform_selection_line">#8F919A</color>
+    <color name="waveform_selection_background">#668F919A</color>
+</resources>
