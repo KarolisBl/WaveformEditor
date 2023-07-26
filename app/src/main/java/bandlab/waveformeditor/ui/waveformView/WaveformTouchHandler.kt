@@ -16,7 +16,7 @@ class WaveformTouchHandler {
         currentStartSelection: Int,
         currentEndSelection: Int,
         maxEndSelection: Int,
-        xStepWidth: Int,
+        xStepWidth: Float,
     ): WaveformTouchEventResult {
         when (event.action) {
             MotionEvent.ACTION_DOWN -> onActionDown(
@@ -42,7 +42,7 @@ class WaveformTouchHandler {
         event: MotionEvent,
         currentStartSelection: Int,
         currentEndSelection: Int,
-        xStepWidth: Int,
+        xStepWidth: Float,
     ) {
         if (isActionDownInTouchArea(event.x, currentStartSelection, xStepWidth)) {
             isDraggingStartSelection = true
@@ -55,7 +55,7 @@ class WaveformTouchHandler {
     private fun isActionDownInTouchArea(
         eventX: Float,
         currentSelection: Int,
-        xStepWidth: Int
+        xStepWidth: Float
     ) = eventX < currentSelection * xStepWidth + TOUCH_AREA_DP.toPx &&
             eventX > currentSelection * xStepWidth - TOUCH_AREA_DP.toPx
 
@@ -69,7 +69,7 @@ class WaveformTouchHandler {
         currentStartSelection: Int,
         currentEndSelection: Int,
         maxEndSelection: Int,
-        xStepWidth: Int,
+        xStepWidth: Float,
     ): WaveformTouchEventResult {
         val pendingSelection = (event.x / xStepWidth).roundToInt()
         if (isDraggingStartSelection) {

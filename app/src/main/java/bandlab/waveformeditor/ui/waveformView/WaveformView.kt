@@ -184,7 +184,7 @@ class WaveformView @JvmOverloads constructor(
             currentStartSelection = currentStartSelection,
             currentEndSelection = currentEndSelection,
             maxEndSelection = waveformData.size,
-            xStepWidth = getXStepWidth().toInt(),
+            xStepWidth = getXStepWidth(),
         )
         when (touchEventResult) {
             is WaveformTouchEventResult.StartSelectionChanged -> {
